@@ -45,7 +45,10 @@ alter table pessoas add column profissao varchar(20);
 alter table pessoas add profissao varchar(20);
 alter table pessoas add column profissao varchar(20) after nome;
 alter table pessoas add column teste varchar(20) first;
+alter table cursos add column idcurso int first;
+alter table cursos add primary key(idcurso);
 
+desc cursos;
 
 
 /* Remove Columns */
@@ -70,10 +73,9 @@ alter table pessoas change column profissao prof varchar(40);
 alter table pessoas rename pessoal;
 
 
+/* REMOVE TABLE */
+drop table if exists cursos;
+drop table cursos;
 
-/* SELECTS */
-SELECT * FROM cadastro.pessoas;
-select * from pessoas where sexo = 'F';
-select * from pessoas where sexo = 'F' and peso > 60;
 
 
