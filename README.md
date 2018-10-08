@@ -1,0 +1,2 @@
+# mysql-basics
+Study MySQL
